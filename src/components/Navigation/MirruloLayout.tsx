@@ -1,8 +1,9 @@
 "use client";
 
 import { ThemeProvider } from "@/components/ThemeContext";
-import Navbar from "./Navbat";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Toolbar from "./Toolbar";
 
 export default function MirruloLayout({
   children,
@@ -13,8 +14,13 @@ export default function MirruloLayout({
     <ThemeProvider>
       <div className="flex flex-col h-screen">
         <Navbar />
-        {children}
-        <Footer />
+        <div className="flex flex-row">
+          <Toolbar />
+          <div className="flex flex-col h-screen">
+            {children}
+            <Footer />
+          </div>
+        </div>
       </div>
     </ThemeProvider>
   );
