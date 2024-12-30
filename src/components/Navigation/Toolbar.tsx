@@ -64,7 +64,7 @@ const Toolbar = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col border-r border-gray-700">
       {toolbasButtons.map((myButton, idx) => {
         return (
           <div

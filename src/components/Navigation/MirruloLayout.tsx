@@ -16,7 +16,7 @@ export default function MirruloLayout({
         <Navbar />
         <div className="flex flex-row">
           <Toolbar />
-          <div className="flex flex-col h-screen">
+          <div className="flex-1 flex flex-col h-screen">
             {children}
             <Footer />
           </div>

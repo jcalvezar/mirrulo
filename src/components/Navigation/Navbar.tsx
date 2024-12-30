@@ -10,7 +10,7 @@ const Navbar = () => {
   const buttonClass = "w-9 h-9 flex justify-center items-center";
 
   return (
-    <header className="w-full p-2 flex flex-row justify-between">
+    <header className="w-full p-2 flex flex-row justify-between border-b border-gray-700">
       <img src="/imgs/mirrulo-logo-white.png" width={112} height={37} />
       <div className="flex flex-row gap-2">
         <RoundedBorder>
